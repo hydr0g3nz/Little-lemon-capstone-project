@@ -1,10 +1,10 @@
 import React from "react";
 
-function Footer() {
+function Footer({className}) {
   return (
-    <>
-    <h1>HELLO WORLD</h1>
-    </>
+    <footer className={className}>
+    <h1>FOOTER</h1>
+    </footer>
   );
 }
 

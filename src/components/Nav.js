@@ -1,16 +1,25 @@
 import React from "react";
 import Logo from "../assets/Logo.svg"
-function Nav() {
+import { Link } from "react-router-dom";
+function Nav({className}) {
   return (
-    <>
+    <nav className={className} >
+    <div>
     <img src={Logo} alt="Logo"></img>
+    </div>
+    <div>
     <ul>
-      <li><a href="#a">a</a></li>
-      <li><a href="#b">b</a></li>
-      <li><a href="#c">c</a></li>
-      <li><a href="#d">d</a></li>
+      <li><Link to="/home">Home</Link></li>
+      <li><Link to="/about">About</Link></li>
+      <li><Link to="/menu">Menu</Link></li>
+      <li><Link to="/reserve-table">Reservations</Link></li>
+      <li><Link to="/order-online">OrderOnline</Link></li>
+      <li><Link to="/login">Login</Link></li>
+
+    
     </ul>
-    </>
+    </div>
+    </nav>
   );
 }
 

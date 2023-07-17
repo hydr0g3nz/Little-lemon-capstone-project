@@ -1,0 +1,147 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500;600;700&display=swap');
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,400;0,600;1,300&display=swap');
+
+
+.container{
+    background-color:azure;
+    display: grid;
+    border: 3px solid black;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(150x,auto);
+}
+.container > *{
+    border: 1px solid black;
+    margin: 10px;
+}
+.main{
+    grid-column: 12 span ;
+    justify-content: center;
+    
+}
+.nav{
+    border: 1px solid red ;
+
+    grid-column: 3/11;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    justify-items:center
+
+}
+
+.nav div img{
+    border:1px solid blue;
+    align-self: center;
+}
+
+.nav div ul{
+    display: flex;
+    border:1px solid blue;
+    margin: 10px;
+
+
+}
+.nav div  ul li{
+    display: flex;
+    border:1px solid blue;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.header-container{
+    width: 100%;
+    
+    
+
+}
+
+
+h1{
+    font-size: 64px;
+    color: #f4ce14;
+    font-family: 'Markazi Text', serif;
+    margin: 1rem 0rem;
+}
+h3{
+    font-family: 'Karla', sans-serif;
+    font-size: 40px;
+    color: white;
+    margin: 0 0;
+}
+
+.header-container section{
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    border: #f4ce14 solid 1px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    
+}
+
+
+
+
+footer{
+    grid-column: 12 span;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.hero-section{
+    background-color: #495E57;
+}
+.hero-section-left{
+    /* background-color: red; */
+    width: 50%;
+    text-align: start;
+    box-sizing: border-box;
+    padding: 2rem;   
+    height: 100%;
+}
+.hero-section-right{
+    /* background-color: blue; */
+    width: 50%;
+    height: 100%;
+    align-content: space-around;
+
+}
+.hero-section-right img{
+    position: relative;
+    top: 3rem;
+    left: 30%;
+    width: 60%;
+    border-radius: 1.5rem;
+    
+
+
+}
+
+.hero-section .row{
+    width: 960px;
+    /* background-color: blueviolet; */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+}
+.hero-section p{
+    color: aliceblue;
+}
+.btn {
+    background-color: #f4ce14;
+    color: black;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    box-shadow: 0px;
+    border: 0px;
+    font-weight:bold;
+    font-size: 1rem;
+    
+}

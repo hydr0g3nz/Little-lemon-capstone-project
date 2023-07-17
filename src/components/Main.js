@@ -1,11 +1,14 @@
 
 import React from "react";
 
-function Main() {
+function Main({className,children}) {
   return (
-    <>
-    <h1>HELLO WORLD</h1>
-    </>
+    <main className={className}>
+    
+      {children}
+   
+
+    </main>
   );
 }
 
