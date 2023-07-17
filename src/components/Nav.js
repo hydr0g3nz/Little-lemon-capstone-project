@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function Nav({className}) {
   return (
     <nav className={className} >
-    <div>
+    <div >
     <img src={Logo} alt="Logo"></img>
     </div>
     <div>

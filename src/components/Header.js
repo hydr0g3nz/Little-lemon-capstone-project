@@ -1,84 +1,203 @@
-import pic1 from "../assets/restauranfood.jpg"
+import pic1 from "../assets/restauranfood.jpg";
 import React from "react";
-
-
-function Header({className}) {
+import logo from "../assets/john.jpg";
+function Header({ className }) {
   return (
     <header className="header-container">
-
-    
-
-
-
-    <section className="hero-section">
-      <div className="row"> 
+      <section className="hero-section">
+        <div className="row">
           <div className="hero-section-left">
-          <h1>Little Lemon</h1>
-        <h3>Chicago</h3>
-        <p>
-          We are a family owned Mediterranean restaurant,
-          focused on traditional recipes served with a modern twist.
-        </p>
-        <button className="btn">Reserve a Table</button>
+            <h1>Little Lemon</h1>
+            <h3>Chicago</h3>
+            <p>
+              We are a family owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist.
+            </p>
+            <button className="btn">Reserve a Table</button>
           </div>
           <div className="hero-section-right">
-            <img src={pic1} alt="asd" width="200"></img>
+            <img src={pic1} alt="asd" height={400} width={300}></img>
           </div>
-      </div>
-        
+        </div>
       </section>
-      
-
-      <section id="highlights">
+      {/* highlight */}
+      <section className="highlights-container">
         <div className="highlights-header row">
-          <h4>Specials</h4>
-          <button>Online Menu</button>
+          <h2>This weeks Specials! </h2>
+          <button className="btn">Online Menu</button>
         </div>
+
         <div className="row">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          
-        </div>
-      </section>
-      <section id="testimonials">
-        <div>
-          <h4>Testimonials</h4>
-          <div className="row">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          
-        </div>
-        </div>
-      </section>
-      <section id="about">
-      <div className="row"> 
-          <div className="">
-          <h1>Little Lemon</h1>
-        <h3>Chicago</h3>
-        <p>
-          We are a family owned Mediterranean restaurant,
-          focused on traditional recipes served with a modern twist.
-        </p>
-        <button>Reserve a Table</button>
+          {/* card 1 */}
+          <div className="highlights-card">
+            <img src={pic1} alt="asd" height={400} width={300}></img>
+            <div className="highlight-card-discription">
+              <div className="highlight-card-header row">
+                <p className="highlight-card-header-menu">Greek salad</p>
+                <p className="highlight-card-header-price">$12.99</p>
+              </div>
+              <div className="highlight-card-text">
+                <p>
+                  The famous greek salad of crispy letture.pepers, olives and
+                  ourgarnished with crunchy garlic and rosemay oroutons.
+                </p>
+              </div>
+              <div className="highlight-card-header row">
+                <p className="highlight-card-header-menu">Order delivery</p>
+                <p>Logo</p>
+              </div>
+            </div>
           </div>
-          <div className="">
-            <img src={pic1} alt="asd" width="200"></img>
-            <img src={pic1} alt="asd" width="200"></img>
+
+          {/* card 2 */}
+          <div className="highlights-card">
+            <img src={pic1} alt="asd" height={400} width={300}></img>
+            <div className="highlight-card-discription">
+              <div className="highlight-card-header row">
+                <p className="highlight-card-header-menu">Greek salad</p>
+                <p className="highlight-card-header-price">$12.99</p>
+              </div>
+              <div className="highlight-card-text">
+                <p>
+                  The famous greek salad of crispy letture.pepers, olives and
+                  ourgarnished with crunchy garlic and rosemay oroutons.
+                </p>
+              </div>
+              <div className="highlight-card-header row">
+                <p className="highlight-card-header-menu">Order delivery</p>
+                <p>Logo</p>
+              </div>
+            </div>
           </div>
-      </div>
+
+          {/* card 3 */}
+          <div className="highlights-card">
+            <img src={pic1} alt="asd" height={400} width={300}></img>
+            <div className="highlight-card-discription">
+              <div className="highlight-card-header row">
+                <p className="highlight-card-header-menu">Greek salad</p>
+                <p className="highlight-card-header-price">$12.99</p>
+              </div>
+              <div className="highlight-card-text">
+                <p>
+                  The famous greek salad of crispy letture.pepers, olives and
+                  ourgarnished with crunchy garlic and rosemay oroutons.
+                </p>
+              </div>
+              <div className="highlight-card-header row">
+                <p className="highlight-card-header-menu">Order delivery</p>
+                <p>Logo</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
-      
-
-
-
-
-  
-
-
-
+      {/* testimonials */}
+      <section className="review-container">
+        <h2>What are customer say!</h2>
+        <div className="row">
+        <div className="review-card">
+            <div className="row star">
+              <meter
+                class="average-rating"
+                min="0"
+                max="5"
+                value="4.3"
+                title="4.3 out of 5 stars"
+              >
+                4.3 out of 5
+              </meter>
+            </div>
+            <div className="review-user">
+              <div className="row">
+                <img src={logo} className="review-avatar" alt="user"></img>
+                <p>joe biden</p>
+              </div>
+            </div>
+            <div className="review-description">
+              <p>
+                The famous greek salad of crispy letture.pepers, olives and
+                ourgarnished with crunchy garlic and rosemay oroutons.
+              </p>
+            </div>
+          </div>
+          <div className="review-card">
+            <div className="row star">
+              <meter
+                class="average-rating"
+                min="0"
+                max="5"
+                value="4.3"
+                title="4.3 out of 5 stars"
+              >
+                4.3 out of 5
+              </meter>
+            </div>
+            <div className="review-user">
+              <div className="row">
+                <img src={logo} className="review-avatar" alt="user"></img>
+                <p>joe biden</p>
+              </div>
+            </div>
+            <div className="review-description">
+              <p>
+                The famous greek salad of crispy letture.pepers, olives and
+                ourgarnished with crunchy garlic and rosemay oroutons.
+              </p>
+            </div>
+          </div>
+          <div className="review-card">
+            <div className="row star">
+              <meter
+                class="average-rating"
+                min="0"
+                max="5"
+                value="4.3"
+                title="4.3 out of 5 stars"
+              >
+                4.3 out of 5
+              </meter>
+            </div>
+            <div className="review-user">
+              <div className="row">
+                <img src={logo} className="review-avatar" alt="user"></img>
+                <p>joe biden</p>
+              </div>
+            </div>
+            <div className="review-description">
+              <p>
+                The famous greek salad of crispy letture.pepers, olives and
+                ourgarnished with crunchy garlic and rosemay oroutons.
+              </p>
+            </div>
+          </div>
+          <div className="review-card">
+            <div className="row star">
+              <meter
+                class="average-rating"
+                min="0"
+                max="5"
+                value="4.3"
+                title="4.3 out of 5 stars"
+              >
+                4.3 out of 5
+              </meter>
+            </div>
+            <div className="review-user">
+              <div className="row">
+                <img src={logo} className="review-avatar" alt="user"></img>
+                <p>joe biden</p>
+              </div>
+            </div>
+            <div className="review-description">
+              <p>
+                The famous greek salad of crispy letture.pepers, olives and
+                ourgarnished with crunchy garlic and rosemay oroutons.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
   );
 }
