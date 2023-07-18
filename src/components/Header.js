@@ -1,19 +1,21 @@
 import pic1 from "../assets/restauranfood.jpg";
+import pic2 from "../assets/restaurant chef B.jpg"
 import React from "react";
 import logo from "../assets/john.jpg";
+import { Link } from "react-router-dom";
 function Header({ className }) {
   return (
-    <header className="header-container">
+    <header className="header-Container">
       <section className="hero-section">
-        <div className="row">
+        <div className="Row">
           <div className="hero-section-left">
-            <h1>Little Lemon</h1>
-            <h3>Chicago</h3>
+            <h1 className="H1">Little Lemon</h1>
+            <h3 className="H3">Chicago</h3>
             <p>
               We are a family owned Mediterranean restaurant, focused on
               traditional recipes served with a modern twist.
             </p>
-            <button className="btn">Reserve a Table</button>
+            <button className="btn"><Link to="/reserve-table">Reserve a Table</Link></button>
           </div>
           <div className="hero-section-right">
             <img src={pic1} alt="asd" height={400} width={300}></img>
@@ -21,18 +23,18 @@ function Header({ className }) {
         </div>
       </section>
       {/* highlight */}
-      <section className="highlights-container">
-        <div className="highlights-header row">
+      <section className="highlights-Container">
+        <div className="highlights-header Row">
           <h2>This weeks Specials! </h2>
           <button className="btn">Online Menu</button>
         </div>
 
-        <div className="row">
+        <div className="Row">
           {/* card 1 */}
           <div className="highlights-card">
             <img src={pic1} alt="asd" height={400} width={300}></img>
             <div className="highlight-card-discription">
-              <div className="highlight-card-header row">
+              <div className="highlight-card-header Row">
                 <p className="highlight-card-header-menu">Greek salad</p>
                 <p className="highlight-card-header-price">$12.99</p>
               </div>
@@ -42,7 +44,7 @@ function Header({ className }) {
                   ourgarnished with crunchy garlic and rosemay oroutons.
                 </p>
               </div>
-              <div className="highlight-card-header row">
+              <div className="highlight-card-header Row">
                 <p className="highlight-card-header-menu">Order delivery</p>
                 <p>Logo</p>
               </div>
@@ -53,7 +55,7 @@ function Header({ className }) {
           <div className="highlights-card">
             <img src={pic1} alt="asd" height={400} width={300}></img>
             <div className="highlight-card-discription">
-              <div className="highlight-card-header row">
+              <div className="highlight-card-header Row">
                 <p className="highlight-card-header-menu">Greek salad</p>
                 <p className="highlight-card-header-price">$12.99</p>
               </div>
@@ -63,7 +65,7 @@ function Header({ className }) {
                   ourgarnished with crunchy garlic and rosemay oroutons.
                 </p>
               </div>
-              <div className="highlight-card-header row">
+              <div className="highlight-card-header Row">
                 <p className="highlight-card-header-menu">Order delivery</p>
                 <p>Logo</p>
               </div>
@@ -74,7 +76,7 @@ function Header({ className }) {
           <div className="highlights-card">
             <img src={pic1} alt="asd" height={400} width={300}></img>
             <div className="highlight-card-discription">
-              <div className="highlight-card-header row">
+              <div className="highlight-card-header Row">
                 <p className="highlight-card-header-menu">Greek salad</p>
                 <p className="highlight-card-header-price">$12.99</p>
               </div>
@@ -84,7 +86,7 @@ function Header({ className }) {
                   ourgarnished with crunchy garlic and rosemay oroutons.
                 </p>
               </div>
-              <div className="highlight-card-header row">
+              <div className="highlight-card-header Row">
                 <p className="highlight-card-header-menu">Order delivery</p>
                 <p>Logo</p>
               </div>
@@ -93,11 +95,11 @@ function Header({ className }) {
         </div>
       </section>
       {/* testimonials */}
-      <section className="review-container">
+      <section className="review-Container">
         <h2>What are customer say!</h2>
-        <div className="row">
+        <div className="Row">
         <div className="review-card">
-            <div className="row star">
+            <div className="Row star">
               <meter
                 class="average-rating"
                 min="0"
@@ -109,7 +111,7 @@ function Header({ className }) {
               </meter>
             </div>
             <div className="review-user">
-              <div className="row">
+              <div className="Row">
                 <img src={logo} className="review-avatar" alt="user"></img>
                 <p>joe biden</p>
               </div>
@@ -122,7 +124,7 @@ function Header({ className }) {
             </div>
           </div>
           <div className="review-card">
-            <div className="row star">
+            <div className="Row star">
               <meter
                 class="average-rating"
                 min="0"
@@ -134,7 +136,7 @@ function Header({ className }) {
               </meter>
             </div>
             <div className="review-user">
-              <div className="row">
+              <div className="Row">
                 <img src={logo} className="review-avatar" alt="user"></img>
                 <p>joe biden</p>
               </div>
@@ -147,7 +149,7 @@ function Header({ className }) {
             </div>
           </div>
           <div className="review-card">
-            <div className="row star">
+            <div className="Row star">
               <meter
                 class="average-rating"
                 min="0"
@@ -159,7 +161,7 @@ function Header({ className }) {
               </meter>
             </div>
             <div className="review-user">
-              <div className="row">
+              <div className="Row">
                 <img src={logo} className="review-avatar" alt="user"></img>
                 <p>joe biden</p>
               </div>
@@ -172,7 +174,7 @@ function Header({ className }) {
             </div>
           </div>
           <div className="review-card">
-            <div className="row star">
+            <div className="Row star">
               <meter
                 class="average-rating"
                 min="0"
@@ -184,7 +186,7 @@ function Header({ className }) {
               </meter>
             </div>
             <div className="review-user">
-              <div className="row">
+              <div className="Row">
                 <img src={logo} className="review-avatar" alt="user"></img>
                 <p>joe biden</p>
               </div>
@@ -195,6 +197,27 @@ function Header({ className }) {
                 ourgarnished with crunchy garlic and rosemay oroutons.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="about-section">
+        <div className="Row">
+          <div className="about-section-left">
+            <h1>Little Lemon</h1>
+            <h3>Chicago</h3>
+            <p>
+              We are a family owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist.
+              We are a family owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist.
+              We are a family owned Mediterranean restaurant, focused on
+              traditional recipes served with a modern twist.
+            </p>
+            
+          </div>
+          <div className="about-section-right">
+            <img className="about-pic-1" src={pic1} alt="asd" height={400} width={300}></img>
+            <img  className="about-pic-2" src={pic2} alt="asd" height={400} width={300}></img>
           </div>
         </div>
       </section>

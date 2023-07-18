@@ -1,13 +1,17 @@
-
 import React from "react";
 
-function Main({className,children}) {
-  return (
-    <main className={className}>
-    
-      {children}
-   
 
+function Main({ className, children }) {
+ 
+  return (
+    <main
+      className={className}
+      
+    >
+      {children}
+      
+
+     
     </main>
   );
 }
