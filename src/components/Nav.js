@@ -9,12 +9,12 @@ function Nav({className}) {
     </div>
     <div>
     <ul>
-      <li><Link to="/">Home</Link></li>
-      <li><Link to="/about">About</Link></li>
-      <li><Link to="/menu">Menu</Link></li>
-      <li><Link to="/reserve-table">Reservations</Link></li>
-      <li><Link to="/order-online">OrderOnline</Link></li>
-      <li><Link to="/login">Login</Link></li>
+      <li data-testid="Nav-Home"><Link to="/">Home</Link></li>
+      <li data-testid="Nav-About"><Link to="/about">About</Link></li>
+      <li data-testid="Nav-Menu"><Link to="/menu">Menu</Link></li>
+      <li data-testid="Nav-ReserveTable"><Link to="/reserve-table">Reservations</Link></li>
+      <li data-testid="Nav-OrderOnline"><Link to="/order-online">OrderOnline</Link></li>
+      <li data-testid="Nav-Login"><Link to="/login">Login</Link></li>
 
     
     </ul>
