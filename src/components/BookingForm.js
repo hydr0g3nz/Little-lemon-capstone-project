@@ -30,7 +30,7 @@ function BookingForm({ className ,availableTimes,submitForm,dispatchTimes}) {
   }, []);
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Account created!");
+    
     submitForm({date,time,guest,occasion})
     clearForm();
   };
